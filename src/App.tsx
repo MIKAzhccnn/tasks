@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import GTR_R32 from "./images/GTR_R32.jpg";
-import R32_Drift from "./images/R32_Drift.jpg";
 
 function App(): JSX.Element {
     return (
@@ -24,10 +23,17 @@ function App(): JSX.Element {
             <br></br>
             <Container>
                 <Row>
-                    <Col>The Drift Race Tuned Mode:</Col>
-                    <Col>
-                        <img src={R32_Drift} />
-                    </Col>
+                    <div>
+                        <Col>
+                            R32 Has The Drift Race Tuned Mode
+                            <div className="rectangle"></div>
+                        </Col>
+
+                        <Col>
+                            Also Has The Circuit Race Tuned type
+                            <div className="rectangle"></div>
+                        </Col>
+                    </div>
                 </Row>
             </Container>
         </div>
