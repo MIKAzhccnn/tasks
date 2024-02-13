@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
-import { Button } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import GTR_R32 from "./images/GTR_R32.jpg";
+import R32_Drift from "./images/R32_Drift.jpg";
 
 function App(): JSX.Element {
     return (
@@ -20,6 +21,15 @@ function App(): JSX.Element {
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
+            <br></br>
+            <Container>
+                <Row>
+                    <Col>The Drift Race Tuned Mode:</Col>
+                    <Col>
+                        <img src={R32_Drift} />
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
