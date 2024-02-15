@@ -7,9 +7,14 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">UD CISC275 Tasks</header>
-            <h1>GTR R32 showcase</h1>
-            <p>Zhicheng Liu said, Hello World!</p>
-            <img src={GTR_R32} alt="GTR!!!" />
+            <h1>GTR R32 fan page</h1>
+            <br></br>
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World
+            </Button>
+            <p>
+                Zhicheng Liu said, Hello World! What a lovely day with the R32!
+            </p>
             <br></br>
             R32 is:
             <ul>
@@ -17,23 +22,26 @@ function App(): JSX.Element {
                 <li>STRONG</li>
                 <li>BEAUTY</li>
             </ul>
-            <Button onClick={() => console.log("Hello World!")}>
-                Log Hello World
-            </Button>
             <br></br>
             <Container>
                 <Row>
-                    <div>
-                        <Col>
-                            R32 Has The Drift Race Tuned Mode
-                            <div className="rectangle"></div>
-                        </Col>
-
-                        <Col>
-                            Also Has The Circuit Race Tuned type
-                            <div className="rectangle"></div>
-                        </Col>
-                    </div>
+                    <Col>
+                        <div className="rectangularBackground">
+                            <span
+                                style={{
+                                    color: "white",
+                                    fontSize: 50
+                                }}
+                            >
+                                Sunshine and the GTR!!!
+                            </span>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div className="rectangularBackground">
+                            <img src={GTR_R32} alt="GTR_R32" />
+                        </div>
+                    </Col>
                 </Row>
             </Container>
         </div>
