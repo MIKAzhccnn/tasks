@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Button, Row, Col } from "react-bootstrap";
 
 const PEOPLE = [
-    "Alan Turing",
-    "Grace Hopper",
-    "Ada Lovelace",
-    "Charles Babbage",
-    "Barbara Liskov",
-    "Margaret Hamilton"
+    "Valtteri Bottas",
+    "Max Verstappen",
+    "Sebastian Vettel",
+    "Charles Leclerc",
+    "Zhou Guanyu",
+    "Lewis Hamilton"
 ];
 
 export function ChooseTeam(): JSX.Element {
