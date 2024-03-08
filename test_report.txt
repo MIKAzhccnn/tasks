@@ -17,11 +17,11 @@ PASS src/nested.test.ts
 PASS src/form-components/MultipleChoiceQuestion.test.tsx
 PASS src/components/StartAttempt.test.tsx
 PASS src/components/TwoDice.test.tsx
-PASS src/functions.test.ts
 PASS src/bad-components/DoubleHalf.test.tsx
+PASS src/functions.test.ts
 PASS src/bad-components/ChooseTeam.test.tsx
-PASS src/form-components/CheckAnswer.test.tsx
 PASS src/components/ChangeType.test.tsx
+PASS src/form-components/CheckAnswer.test.tsx
 PASS src/form-components/EditMode.test.tsx
 PASS src/components/CycleHoliday.test.tsx
 PASS src/form-components/GiveAttempts.test.tsx
@@ -71,9 +71,8 @@ FAIL src/form-components/ChangeColor.test.tsx
 
       at Object.<anonymous> (src/form-components/ChangeColor.test.tsx:17:28)
 
-PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
-PASS src/bad-components/ShoveBox.test.tsx
+PASS src/components/Counter.test.tsx
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/App.test.tsx
   ● Console
@@ -104,6 +103,7 @@ PASS src/App.test.tsx
       at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:14985:18)
       at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:17811:13)
 
+PASS src/bad-components/ShoveBox.test.tsx
 -----------------------------|---------|----------|---------|---------|-------------------
 File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------------|---------|----------|---------|---------|-------------------
@@ -140,5 +140,5 @@ All files                    |    99.2 |    95.29 |   99.17 |   99.56 |
 Test Suites: 1 failed, 19 passed, 20 total
 Tests:       1 failed, 133 passed, 134 total
 Snapshots:   0 total
-Time:        7.474 s
+Time:        7.363 s
 Ran all test suites.
