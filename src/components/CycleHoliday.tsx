@@ -27,6 +27,7 @@ const nextHolidayAlphabetically = (currentHoliday: {
 const sortHolidaysByDate = () => {
     holidays.sort((a, b) => a.date.localeCompare(b.date));
 };
+
 const nextHolidayByYear = (currentHoliday: {
     name: unknown;
     emoji?: string;
@@ -37,6 +38,7 @@ const nextHolidayByYear = (currentHoliday: {
     );
     return holidays[(currentIndex + 1) % holidays.length];
 };
+
 export function CycleHoliday(): JSX.Element {
     const [currentHoliday, setCurrentHoliday] = useState(holidays[0]);
 
