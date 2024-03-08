@@ -23,9 +23,9 @@ export function ChangeColor(): JSX.Element {
                     inline
                     type="radio"
                     label={
-                        <div style={{ background: color, padding: "2px" }}>
+                        <span style={{ background: color, padding: "2px" }}>
                             {color}
-                        </div>
+                        </span>
                     }
                     name="color-button"
                     checked={selectedColor === color}
@@ -34,7 +34,7 @@ export function ChangeColor(): JSX.Element {
             ))}
             <div>
                 You have chosen{" "}
-                <div
+                <span
                     data-testid="colored-box"
                     style={{
                         background: selectedColor,
@@ -42,7 +42,7 @@ export function ChangeColor(): JSX.Element {
                     }}
                 >
                     {selectedColor}
-                </div>
+                </span>
                 .
             </div>
         </div>
